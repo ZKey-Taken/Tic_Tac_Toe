@@ -1,0 +1,50 @@
+
+        gbc.gridx = 1;
+        gbc.gridy = 1;
+        ArrayList<JButton> grids = new ArrayList<>();
+        for(int i = 1; i <= 9; i++){
+            JButton button  = new JButton();
+            button.setMargin(new Insets(60, 50, 60, 50));
+            inGameFrame.add(button, gbc);
+            grids.add(button);
+            gbc.gridx++;
+
+            if(i % 3 == 0){
+                gbc.gridy++;
+                gbc.gridx = 1;
+            }
+        }
+
+
+
+
+//        JButton one = new JButton(), two = new JButton(), three = new JButton(),
+//                four = new JButton(), five = new JButton(), six = new JButton(),
+//                seven = new JButton(), eight = new JButton(), nine = new JButton();
+//        gbc.gridx = 1; gbc.gridy = 1;
+//        one.setMargin(new Insets(50, 50, 50, 50));
+//        inGameFrame.add(one, gbc);
+//        gbc.gridx = 2; gbc.gridy = 1;
+//        two.setMargin(new Insets(50, 50, 50, 50));
+//        inGameFrame.add(two, gbc);
+//        gbc.gridx = 3; gbc.gridy = 1;
+//        three.setMargin(new Insets(50, 50, 50, 50));
+//        inGameFrame.add(three, gbc);
+//        gbc.gridx = 1; gbc.gridy = 2;
+//        four.setMargin(new Insets(50, 50, 50, 50));
+//        inGameFrame.add(four, gbc);
+//        gbc.gridx = 2; gbc.gridy = 2;
+//        five.setMargin(new Insets(50, 50, 50, 50));
+//        inGameFrame.add(five, gbc);
+//        gbc.gridx = 3; gbc.gridy = 2;
+//        six.setMargin(new Insets(50, 50, 50, 50));
+//        inGameFrame.add(six, gbc);
+//        gbc.gridx = 1; gbc.gridy = 3;
+//        seven.setMargin(new Insets(50, 50, 50, 50));
+//        inGameFrame.add(seven, gbc);
+//        gbc.gridx = 2; gbc.gridy = 3;
+//        eight.setMargin(new Insets(50, 50, 50, 50));
+//        inGameFrame.add(eight, gbc);
+//        gbc.gridx = 3; gbc.gridy = 3;
+//        nine.setMargin(new Insets(50, 50, 50, 50));
+//        inGameFrame.add(nine, gbc);
