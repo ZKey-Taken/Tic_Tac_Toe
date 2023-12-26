@@ -1,3 +1,5 @@
+package GamePackage;
+
 import javax.swing.*;
 import java.awt.*;
 import java.util.ArrayList;
@@ -45,7 +47,7 @@ public class Board{
     }
 
     public void setUpPlayersUI(JFrame frame, GridBagConstraints gbc){
-        // Add Player 1 Names & Score
+        // Add GamePackage.Player 1 Names & Score
         JLabel p1_name = new JLabel(this.getPlayer1().getName() + "     ");
         p1_name.setFont(new Font("Impact", Font.PLAIN, 30));
         gbc.gridx = 0;
@@ -57,7 +59,7 @@ public class Board{
         gbc.gridy = 1;
         frame.add(p1_score, gbc);
 
-        // Add Player 2 Names & Score
+        // Add GamePackage.Player 2 Names & Score
         JLabel p2_name = new JLabel( "     " + this.getPlayer2().getName());
         p2_name.setFont(new Font("Impact", Font.PLAIN, 30));
         gbc.gridx = 10;

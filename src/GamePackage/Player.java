@@ -1,3 +1,5 @@
+package GamePackage;
+
 import java.awt.*;
 
 public class Player {
@@ -5,7 +7,7 @@ public class Player {
     private int score;
     private Color color;
 
-    Player(String name, Color color){
+    public Player(String name, Color color){
         setName(name);
         this.score = 0;
         setColor(color);

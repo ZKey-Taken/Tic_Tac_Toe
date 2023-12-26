@@ -1,3 +1,5 @@
+package GamePackage;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -10,8 +12,8 @@ public class GameRunner implements ActionListener {
     private JFrame startingFrame = new JFrame("Tic Tac Toe");
     private JFrame inGameFrame = new JFrame("Tic Tac Toe");
     private JButton startButton = new JButton("START");
-    private JTextField nameInputBox1 = new JTextField("Player 1");
-    private JTextField nameInputBox2 = new JTextField("Player 2");
+    private JTextField nameInputBox1 = new JTextField("GamePackage.Player 1");
+    private JTextField nameInputBox2 = new JTextField("GamePackage.Player 2");
 
     GameRunner(){
         setPlayersNames();
